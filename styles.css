@@ -206,3 +206,9 @@ button:active {
     align-items: center; /* Center the buttons horizontally */
   }
 }
+
+@media (max-width: 500px) {
+  .top {
+    font-size: 60px; /* Decrease the font size for smaller screens */
+  }
+}
