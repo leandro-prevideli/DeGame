@@ -185,13 +185,13 @@ button:active {
 @media (max-width: 768px) {
   .button-container,
   .button-container-two {
-    flex-direction: column; /* Stack the buttons vertically */
-    align-items: center; /* Center the buttons horizontally */
+    flex-direction: column; 
+    align-items: center; 
   }
 }
 
 @media (max-width: 500px) {
   .top {
-    font-size: 60px; /* Decrease the font size for smaller screens */
+    font-size: 20px; 
   }
 }
