@@ -1,0 +1,191 @@
+body {
+  background-image: url("https://iili.io/HPMu4V9.jpg");
+  background-size: cover;
+}
+/* SOCIAL MEDIA BAR */
+.social-bar {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icon img {
+  width: 30px;
+}
+
+/* LOGO */
+#degame-logo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#degame-logo img {
+  position: relative;
+  filter: drop-shadow(0px 4px #BB84E8);
+}
+
+/* BUTTONS */
+.button-container button,
+.button-container-two button,
+.all-categories {
+  border: 2px solid #BB84E8;
+  border-radius: 5px;
+  color: #ffffff;
+  box-shadow: 0px 2px 40px #BB84E8, 0px -2px 2px #BB84E8 inset, 0 2px 2px #ffffff inset;
+  background: linear-gradient(#A437DB, #A437DB);
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: large;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.button-container,
+.button-container-two,
+.all-categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+  transition: transform 0.2s ease-in-out;
+}
+
+button:active {
+  margin-top: 5px;
+  color: #3c005a;
+  box-shadow: 0px 0px;
+}
+
+/* LANGUAGE */
+.language {
+  cursor: pointer;
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  right: 0;
+}
+
+.language:hover .language-options {
+  display: block;
+  cursor: pointer;
+}
+
+.language-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  padding: 8px;
+  border-radius: 4px;
+  list-style-type: none;
+  margin: 0;
+}
+
+.language-options li {
+  padding: 2px;
+  cursor: pointer;
+}
+
+.language-options li:hover {
+  background-color: #BB84E8;
+}
+
+/* MOST PLAYED */
+.top {
+  position: absolute;
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 80px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 90px;
+  filter: drop-shadow(0px 11px 10px #A437DB);
+}
+
+/* SLIDES */
+.swiper-slide {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 200px auto;
+  box-shadow: 5px 5px 10px rgba(187, 17, 178, 1);
+}
+
+.section-wrapper {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+  overflow: hidden;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 200px auto;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.swiper-pagination-bullet {
+  display: inline-block;
+  margin: 0 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #BB84E8;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .button-container,
+  .button-container-two {
+    flex-direction: column; /* Stack the buttons vertically */
+    align-items: center; /* Center the buttons horizontally */
+  }
+}
