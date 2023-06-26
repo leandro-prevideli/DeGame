@@ -1,7 +1,11 @@
 body {
   background-image: url("https://iili.io/HPMu4V9.jpg");
   background-size: cover;
+  margin: 0;
+  min-height: 100vh; 
+  overflow-x: hidden; 
 }
+
 /* SOCIAL MEDIA BAR */
 .social-bar {
   position: relative;
@@ -103,15 +107,15 @@ button:active {
 
 /* MOST PLAYED */
 .top {
-    position: absolute;
-    color: #ffffff;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 80px;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 90px;
-    filter: drop-shadow(0px 1px #f381ea) drop-shadow(0px 8px 8px rgba(204, 92, 204, 0.72)) drop-shadow(0px 15px 5px rgba(207, 92, 198, 0.44));
+  position: absolute;
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 80px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 90px;
+  filter: drop-shadow(0px 1px #f381ea) drop-shadow(0px 8px 8px rgba(204, 92, 204, 0.72)) drop-shadow(0px 15px 5px rgba(207, 92, 198, 0.44));
 }
 
 /* SLIDES */
@@ -182,7 +186,85 @@ button:active {
   background-color: #ffffff;
 }
 
-/* @MEDIAS */
+/* DISCOVER NOW */
+.discover-section {
+  text-align: center;
+  margin-top: 100px; 
+}
+
+.discover {
+  font-size: 80px;
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  filter: drop-shadow(0px 1px #f381ea) drop-shadow(0px 8px 8px rgba(204, 92, 204, 0.72)) drop-shadow(0px 15px 5px rgba(207, 92, 198, 0.44));
+}
+
+.discover-container {
+  margin-bottom: 50px;
+}
+
+p, .discover-container {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  font-size: xx-large;
+}
+
+/* BOXES */
+.activities-panel{
+  margin-bottom: 40px;
+  padding: 80px 0px;
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.activity{
+  background-color:#BB84E8;
+  box-sizing: border-box;
+  width: 240px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 5px;
+  box-shadow: 2px 5px 10px;
+}
+
+.activities-panel .activity {
+  font-size: 16px; 
+  letter-spacing: 1.5px;
+}
+
+.discover,
+.activities-panel {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.discover.active,
+.activities-panel.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#pa {
+  letter-spacing: 2px;
+}
+
+
+
+
+
+/* @ */
 @media (max-width: 768px) {
   .button-container,
   .button-container-two {
@@ -193,6 +275,19 @@ button:active {
 
 @media (max-width: 500px) {
   .top {
-    font-size: 30px; 
+    font-size: 30px;
   }
 }
+
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
