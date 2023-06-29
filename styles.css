@@ -355,6 +355,12 @@ ul li .text {
   margin-top: 20px; 
 }
 
+.logo-container-2 a {
+  display: inline-block;
+  text-align: center;
+  margin: auto; 
+}
+
 .logo-container img {
   margin: auto; 
   height: auto; 
