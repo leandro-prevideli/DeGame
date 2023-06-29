@@ -356,9 +356,11 @@ ul li .text {
 }
 
 .logo-container-2 a {
-  display: inline-block;
-  text-align: auto;
-  margin: auto; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  overflow: hidden;
 }
 
 .logo-container img {
@@ -369,6 +371,10 @@ ul li .text {
 .logo-container-2 img {
   margin: auto;
   height: auto;
+}
+
+.logo-container-2 a:hover img {
+  pointer-events: auto;
 }
 
 
