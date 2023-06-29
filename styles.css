@@ -357,7 +357,7 @@ ul li .text {
 
 .logo-container-2 a {
   display: inline-block;
-  text-align: center;
+  text-align: auto;
   margin: auto; 
 }
 
