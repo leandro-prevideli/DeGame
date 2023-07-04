@@ -57,13 +57,15 @@ body {
   margin-top: 20px;
 }
 
-button:hover {
+button:hover,
+.footer-email-button {
   cursor: pointer;
   transform: translateY(-5px);
   transition: transform 0.2s ease-in-out;
 }
 
-button:active {
+button:active,
+.footer-email-button {
   margin-top: 5px;
   color: #3c005a;
   box-shadow: 0px 0px;
@@ -375,6 +377,52 @@ ul li .text {
 
 .logo-container-2 a:hover img {
   pointer-events: auto;
+}
+
+/* FOOTER */
+
+.footer {
+  background-color: #6d1d96;
+  padding: 30px 30px 60px;
+}
+
+.footer-section {
+  margin-bottom: 25px;
+  text-align: center;
+  display: block;
+}
+
+.footer .logo {
+  margin-bottom: 5px;
+  width: 110px;
+}
+
+.footer p  {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.footer-email-input {
+  margin-right: 2.5%;
+  width: 15% !important;
+}
+
+.footer-email-button {
+  font-size: 12px !important;
+  padding: 10px !important;
+  width: 5% !important;
+  border: 2px solid #BB84E8;
+  border-radius: 5px;
+  color: #ffffff;
+  box-shadow: 0px 2px 40px #BB84E8, 0px -2px 2px #BB84E8 inset, 0 2px 2px #ffffff inset;
+  background: linear-gradient(#A437DB, #A437DB);
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: large;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 2px;
 }
 
 
