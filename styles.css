@@ -310,7 +310,7 @@ p,
 
 ul li {
   list-style-type: none;
-  display: flex;
+/*   display: flex; */
   align-items: center;
   margin-bottom: 10px; 
 }
