@@ -353,7 +353,7 @@ ul li .text {
 }
 
 .logo-container-2 {
-  display: block;
+  display: inline-flex;
   justify-content: center; 
   margin-top: 20px; 
 }
