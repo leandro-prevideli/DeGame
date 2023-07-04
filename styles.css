@@ -266,7 +266,7 @@ p,
 /* JOIN OUR COMMUNITY */
 .right-info {
   background-color: #6d1d96;
-  padding: 300px;
+  padding: 150px;
   text-align: right;
   width: 100%;
   position: relative;
@@ -305,6 +305,7 @@ p,
 
 .right-info-container {
   position: relative; 
+  width: auto;
 }
 
 ul li {
@@ -322,7 +323,7 @@ ul li .text {
   padding-top: 20px;
   color: white;
   font-family: 'Orbitron', sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   letter-spacing: 4px;
   float: right; 
   font-weight: 600;
@@ -406,13 +407,10 @@ ul li .text {
 
 .footer-email-input {
   margin-right: 2.5%;
-  width: 15% !important;
+  width: 15%;
 }
 
 .footer-email-button {
-  font-size: 12px !important;
-  padding: 10px !important;
-  width: 5% !important;
   border: 2px solid #BB84E8;
   border-radius: 5px;
   color: #ffffff;
