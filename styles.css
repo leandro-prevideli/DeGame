@@ -347,13 +347,13 @@ ul li .text {
 }
 
 .logo-container {
-  display: flex;
+  display: block;
   justify-content: center; 
   margin-top: 20px; 
 }
 
 .logo-container-2 {
-  display: flex;
+  display: block;
   justify-content: center; 
   margin-top: 20px; 
 }
