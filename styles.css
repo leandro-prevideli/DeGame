@@ -1,9 +1,9 @@
 body {
-  background-image: url("https://iili.io/HPMu4V9.jpg");
+  background-image: url("https://iili.io/HsKzMmb.jpg");
   background-size: cover;
   margin: 0;
   min-height: 100vh;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 /* SOCIAL MEDIA BAR */
@@ -266,41 +266,22 @@ p,
 /* JOIN OUR COMMUNITY */
 .right-info {
   background-color: #6d1d96;
-  padding: 150px;
-  text-align: right;
+  padding: 10px;
+  text-align: center;
   width: 100%;
   position: relative;
 }
 
 .right-info p {
   margin: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding-right: 600px;
+  padding: 50px;
   letter-spacing: 6px;
   font-weight: 600;
+  z-index: 1;
 }
 
-.icon1 {
-  position: absolute;
-  top: 25%; 
-  left: 5%;
-  transform: translate(0, -50%); 
-}
-
-.icon2 {
-  position: absolute;
-  top: 55%; 
-  left: 5%;
-  transform: translate(0, -50%); 
-}
-
-.icon3 {
-  position: absolute;
-  top: 85%; 
-  left: 5%;
-  transform: translate(0, -50%); 
+.icon1, .icon2, .icon3 {
+  position: relative;
 }
 
 .right-info-container {
@@ -310,22 +291,17 @@ p,
 
 ul li {
   list-style-type: none;
-/*   display: flex; */
+  display: flex;
   align-items: center;
   margin-bottom: 10px; 
 }
 
-
 ul li .text {
-  display: inline;
   margin-left: 10px;
-  margin-top: 45px;
-  padding-top: 20px;
   color: white;
   font-family: 'Orbitron', sans-serif;
   font-size: 15px;
   letter-spacing: 4px;
-  float: right; 
   font-weight: 600;
 }
 
@@ -347,14 +323,16 @@ ul li .text {
 }
 
 .logo-container {
-  display: block;
+  display: inline-block;
   justify-content: center; 
+  align-items: center;
   margin-top: 20px; 
 }
 
 .logo-container-2 {
-  display: inline-flex;
+  display: flex;
   justify-content: center; 
+  align-items: center;
   margin-top: 20px; 
 }
 
@@ -384,7 +362,14 @@ ul li .text {
 
 .footer {
   background-color: #6d1d96;
-  padding: 30px 30px 60px;
+  padding: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto; 
 }
 
 .footer-section {
